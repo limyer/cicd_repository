@@ -1,8 +1,8 @@
 def label = "hello-${UUID.randomUUID().toString()}"
 podTemplate(label: label,
         containers: [
-        containerTemplate(name: 'maven', image: 'harbor.cjs.com/edu/maven-build-tool:1.0.0', ttyEnabled: true, command: 'cat'),
-        containerTemplate(name: 'podman', image: 'harbor.cjs.com/edu/build-tool:1.0.0', ttyEnabled: true, command: 'cat', privileged:true)
+        containerTemplate(name: 'maven', image: 'harbor-cjs.duckdns.org/edu/maven-build-tool:1.0.0', ttyEnabled: true, command: 'cat'),
+        containerTemplate(name: 'podman', image: 'harbor-cjs.duckdns.org/edu/build-tool:1.0.0', ttyEnabled: true, command: 'cat', privileged:true)
   ]) {
     node(label) {
         stage('Get Source') {
