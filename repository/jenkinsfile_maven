@@ -8,9 +8,10 @@ podTemplate(label: label,
         stage('Get Source') {
             container('maven') {
                 sh"""
+                mvn --version
                 git clone https://icistrsa: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@github.com/icistrsa/cicd_repository.git
                 cd cicd_repository/repository/test
-                mvn version
+                mvn --version
                 """
             }
         }
