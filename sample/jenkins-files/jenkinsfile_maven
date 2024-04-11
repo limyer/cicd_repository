@@ -1,8 +1,8 @@
 def label = "hello-${UUID.randomUUID().toString()}"
 podTemplate(label: label,
 	containers: [
-        containerTemplate(name: 'maven', image: 'public.ecr.aws/b3v0x0o0/maven-build-tool:1.0.6', ttyEnabled: true, command: 'cat'),
-        containerTemplate(name: 'podman', image: 'public.ecr.aws/b3v0x0o0/build-tool:aws4', ttyEnabled: true, command: 'cat', privileged:true)
+        containerTemplate(name: 'maven', image: 'public.ecr.aws/b3v0x0o0/maven-build-tool:1.0.0', ttyEnabled: true, command: 'cat'),
+        containerTemplate(name: 'podman', image: 'public.ecr.aws/b3v0x0o0/build-tool:1.0.0', ttyEnabled: true, command: 'cat', privileged:true)
     ]) {
     node(label) {
         stage('Get Source') {
