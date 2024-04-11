@@ -4,7 +4,7 @@ metadata:
   name: hello-world-spring-nexus
   namespace: argocd
 spec:
-  ingressClassName: traefik
+  ingressClassName: nginx
   rules:
   - host: cjs.tt.com
     http:
