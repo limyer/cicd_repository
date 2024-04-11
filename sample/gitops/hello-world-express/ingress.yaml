@@ -1,12 +1,12 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: hello-world-express-nexus
+  name: hello-world-express-ingress
   namespace: argocd
 spec:
   ingressClassName: nginx
   rules:
-  - host: cjs.tt.com
+  - host: edu00-express.com
     http:
       paths:
       - backend:
