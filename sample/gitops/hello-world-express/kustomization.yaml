@@ -6,4 +6,4 @@ resources:
 - ingress.yaml
 images:
 - name: public.ecr.aws/b3v0x0o0/edu-express
-  newTag: 1.0.0
+  newTag: 0.0.1
