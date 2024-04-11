@@ -6,7 +6,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: edu00-spring.duckdns.org
+  - host: edu00-spring.com
     http:
       paths:
       - backend:
