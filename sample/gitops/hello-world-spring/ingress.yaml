@@ -6,22 +6,13 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - http:
+  - host: edu00-spring.duckdns.org
+    http:
       paths:
-        - path: /test
-          pathType: Prefix
-          backend:
-            service:
-              name: hello-spring-svc # 트래픽을 라우팅할 서비스
-              port:
-                number: 80
-#  - host: cjs-test.duckdns.org
-#    http:
-#      paths:
-#      - backend:
-#          service:
-#            name: hello-spring-svc
-#            port:
-#              number: 80
-#        path: /
-#        pathType: Prefix
+      - backend:
+          service:
+            name: hello-spring-svc
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
