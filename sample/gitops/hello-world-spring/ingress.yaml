@@ -1,12 +1,12 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: hello-world-spring-nexus
-  namespace: argocd
+  name: hello-world-spring-ingress
+  namespace: user01
 spec:
   ingressClassName: nginx
   rules:
-  - host: edu00-spring.com
+  - host: user01-spring.com
     http:
       paths:
       - backend:
