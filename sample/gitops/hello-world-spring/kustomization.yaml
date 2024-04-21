@@ -5,5 +5,5 @@ resources:
 - deployment.yaml
 - ingress.yaml
 images:
-- name: public.ecr.aws/b3v0x0o0/cjs-edu
+- name: public.ecr.aws/b3v0x0o0/edu-spring
   newTag: 1.0.0
