@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hello-spring-svc
-  namespace: argocd
+  namespace: user01
 spec:
   ports:
   - port: 80
