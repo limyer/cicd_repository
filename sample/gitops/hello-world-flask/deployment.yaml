@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-flask
-  namespace: argocd
+  namespace: user01
 spec:
   replicas: 1
   revisionHistoryLimit: 3
